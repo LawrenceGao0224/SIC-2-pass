@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.LinkedList;
-class Address { //最後印出LinkedList使用
+class Address { //最後印出LinkedList使用後加入
     String addr; //存放Address
     int len;  //存放長度
     String code; //存放objectcode
@@ -267,7 +267,7 @@ public class SIC{
         fw.close();
         
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~掃第二次~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        FileReader frMid = new FileReader("D:\\java\\pass1.txt"); //讀近來的檔名是pass1.txt
+        FileReader frMid = new FileReader("D:\\java\\pass1.txt"); //讀進來的檔名是pass1.txt
         BufferedReader brMid = new BufferedReader(frMid);
         String line2; 
         LinkedList<Object> b = new LinkedList<Object>();
